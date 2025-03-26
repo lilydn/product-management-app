@@ -1,0 +1,121 @@
+@use "@/styles/_mixins.scss" as *;
+
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$color-border: #ccc;
+$color-bg: var(--carbon0);
+$color-text-primary: #222;
+$color-text-secondary: #666;
+
+@mixin containerStyle {
+  flex: 1 1 55%;
+  min-width: 300px;
+  padding: 22px;
+  min-height: 100%;
+  display: flex;
+}
+
+.container {
+  @include containerStyle;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+}
+
+.centeredContent {
+  @include containerStyle;
+  align-items: center;
+  justify-content: center;
+  color: var(--carbon700);
+  text-align: center;
+}
+
+.card {
+  @include flex-center;
+  gap: $spacing-md;
+  padding: $spacing-sm $spacing-md;
+  background-color: $color-bg;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--accent50);
+
+    .imagePlaceholder {
+      background-color: var(--accent50);
+    }
+  }
+
+  &.selected {
+    background-color: var(--accent200);
+
+    .imagePlaceholder {
+      background-color: var(--accent200);
+    }
+  }
+
+  .imagePlaceholder {
+    @include flex-center;
+    width: 72px;
+    height: 72px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    flex-shrink: 0;
+    font-size: 48px;
+  }
+
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .name {
+      font-weight: 600;
+      font-size: 16px;
+      color: $color-text-primary;
+      @include ellipsis;
+    }
+
+    .description {
+      margin-top: 4px;
+      font-size: 14px;
+      color: $color-text-secondary;
+      @include ellipsis;
+    }
+  }
+
+  .actions {
+    margin-left: auto;
+    position: relative;
+    width: 94px;
+
+    .deleteButton {
+      padding-inline: 6px;
+      background-color: var(--mainAccent);
+      width: 100%;
+
+      &:hover:not(:disabled) {
+        background-color: var(--mainAccentHover);
+      }
+
+      &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+    }
+
+    .error {
+      position: absolute;
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
+      color: #d32f2f;
+      font-size: 10px;
+      margin-top: 3px;
+      @include ellipsis;
+    }
+  }
+}

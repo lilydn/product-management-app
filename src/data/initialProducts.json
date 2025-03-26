@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Spider-Man",
+    "description": "Classic Marvel superhero in his red and blue suit, mid-swing.",
+    "price": 14.99,
+    "creationDate": "2000-10-30T00:00:00",
+    "image": "spiderman.png"
+  },
+  {
+    "id": 2,
+    "name": "Batman",
+    "description": "Gotham’s dark knight, complete with cape and batarang.",
+    "price": 12.99,
+    "creationDate": "2001-11-21T00:00:00",
+    "image": "batman.png"
+  },
+  {
+    "id": 3,
+    "name": "Darth Vader",
+    "description": "The Sith Lord himself, wielding his iconic red lightsaber.",
+    "price": 15.99,
+    "creationDate": "2017-01-04T00:00:00",
+    "image": "darthvader.png"
+  },
+  {
+    "id": 4,
+    "name": "Harry Potter",
+    "description": "The boy who lived, wearing his Gryffindor robes.",
+    "price": 13.49,
+    "creationDate": "2013-01-18T00:00:00",
+    "image": "harrypotter.png"
+  },
+  {
+    "id": 5,
+    "name": "Pikachu",
+    "description": "The beloved electric-type Pokémon, ready for battle.",
+    "price": 11.99,
+    "creationDate": "2017-07-29T00:00:00",
+    "image": "pikachu.png"
+  },
+  {
+    "id": 6,
+    "name": "Iron Man",
+    "description": "Genius billionaire Tony Stark in his red and gold suit.",
+    "price": 16.99,
+    "creationDate": "2009-08-24T00:00:00",
+    "image": "ironman.png"
+  },
+  {
+    "id": 7,
+    "name": "Wonder Woman",
+    "description": "Amazonian warrior with her Lasso of Truth.",
+    "price": 14.49,
+    "creationDate": "2006-07-08T00:00:00",
+    "image": "wonderwoman.png"
+  },
+  {
+    "id": 8,
+    "name": "The Mandalorian",
+    "description": "Bounty hunter from the Star Wars universe, protecting Grogu.",
+    "price": 16.49,
+    "creationDate": "2004-11-25T00:00:00",
+    "image": "mandalorian.png"
+  },
+  {
+    "id": 9,
+    "name": "Grogu",
+    "description": "Adorable 'The Child' from The Mandalorian, also known as Baby Yoda.",
+    "price": 13.99,
+    "creationDate": "2006-05-15T00:00:00",
+    "image": "grogu.png"
+  },
+  {
+    "id": 10,
+    "name": "Captain America",
+    "description": "Steve Rogers, the first Avenger, wielding his iconic shield.",
+    "price": 15.49,
+    "creationDate": "2017-02-18T00:00:00",
+    "image": "captainamerica.png"
+  },
+  {
+    "id": 11,
+    "name": "Thor",
+    "description": "The God of Thunder, wielding his mighty hammer Mjölnir.",
+    "price": 14.79,
+    "creationDate": "2020-10-23T00:00:00",
+    "image": "thor.png"
+  },
+  {
+    "id": 12,
+    "name": "Deadpool",
+    "description": "The Merc with a Mouth, rocking his red suit and katana.",
+    "price": 15.99,
+    "creationDate": "2012-09-14T00:00:00",
+    "image": "deadpool.png"
+  },
+  {
+    "id": 13,
+    "name": "Sonic",
+    "description": "The fastest hedgehog alive, speeding into your collection.",
+    "price": 12.79,
+    "creationDate": "2002-01-12T00:00:00",
+    "image": "sonic.png"
+  },
+  {
+    "id": 14,
+    "name": "Yoda",
+    "description": "Legendary Jedi Master from Star Wars, wise and powerful.",
+    "price": 13.59,
+    "creationDate": "2008-07-22T00:00:00",
+    "image": "yoda.png"
+  },
+  {
+    "id": 15,
+    "name": "Hulk",
+    "description": "The green giant, always ready to smash!",
+    "price": 14.29,
+    "creationDate": "2002-10-02T00:00:00",
+    "image": "hulk.png"
+  },
+  {
+    "id": 16,
+    "name": "Rick Sanchez",
+    "description": "The mad scientist from Rick and Morty, with his portal gun.",
+    "price": 13.99,
+    "creationDate": "2016-07-11T00:00:00",
+    "image": "rick.png"
+  }
+]

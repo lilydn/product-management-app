@@ -1,0 +1,23 @@
+$app-inline-padding: 80px;
+$app-top-bar-height: 47px;
+
+.page {
+  padding-inline: $app-inline-padding;
+  background-color: var(--carbon500);
+  height: calc(100vh - $app-top-bar-height);
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .mainPanel {
+      display: flex;
+      justify-content: space-between;
+      flex: 1 1 auto;
+      overflow: hidden;
+
+      background-color: var(--accent100);
+    }
+  }
+}

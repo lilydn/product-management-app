@@ -1,0 +1,39 @@
+$color-border: #ccc;
+$color-bg: var(--carbon0);
+$color-text-primary: #222;
+$color-text-secondary: #666;
+$input-height: 38px;
+
+.container {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  min-height: 60px;
+  width: 100%;
+  background-color: $color-bg;
+  padding-inline: 22px;
+  gap: 20px;
+}
+
+.searchInput {
+  padding: 8px 12px;
+  border: 1px solid $color-border;
+  border-radius: 4px;
+  flex: 1;
+  max-width: 300px;
+  max-height: $input-height;
+}
+
+.sortLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sortSelect {
+  padding: 6px 12px;
+  border: 1px solid $color-border;
+  border-radius: 4px;
+  max-height: $input-height;
+  min-width: 150px;
+}

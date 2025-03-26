@@ -1,0 +1,14 @@
+.cache
+.vscode
+.tmp
+.git
+public/**/*
+exports/**/*
+build/**/*
+data/**/*
+node_modules/**/*
+package.json
+package-lock.json
+yarn.lock
+*.log*
+*.temp*

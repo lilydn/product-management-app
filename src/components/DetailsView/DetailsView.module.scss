@@ -1,0 +1,107 @@
+@use "@/styles/_mixins.scss" as *;
+
+@mixin containerStyle {
+  flex: 1 1 45%;
+  min-width: 280px;
+  padding: 20px;
+  min-height: 100%;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  @include containerStyle;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.centeredContent {
+  @include containerStyle;
+  justify-content: center;
+  color: var(--carbon700);
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.imageContainer {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  width: 150px;
+  height: auto;
+  min-height: 150px;
+  margin-block: 24px;
+
+  & > div,
+  img {
+    border-radius: 16px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    min-height: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+
+  .imagePlaceholder {
+    background-color: var(--carbon200);
+    min-height: 100%;
+    @include flex-center;
+    font-size: 50px;
+  }
+}
+
+.label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  margin-bottom: 28px;
+
+  input,
+  textarea {
+    margin-top: 6px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 60px;
+  }
+}
+
+.priceInputWrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  input {
+    min-width: fit-content;
+    width: fit-content;
+  }
+
+  span {
+    font-weight: 600;
+  }
+}
+
+.saveButton {
+  margin-block: 24px;
+  align-self: self-end;
+}
+
+.error {
+  color: #d32f2f;
+  margin-top: 10px;
+}

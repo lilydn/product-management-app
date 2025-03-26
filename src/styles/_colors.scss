@@ -1,0 +1,21 @@
+$colors: (
+  accent50: #fffbf3,
+  accent100: #fff3e0,
+  accent200: #fff0b5,
+  carbon0: #ffffff,
+  carbon300: #e0e0e0,
+  carbon500: #9e9e9e,
+  carbon700: #4d4d4d,
+  mainBlue: #007bff,
+  mainBlueHover: #0056b3,
+  mainAccent: #f0a500,
+  mainAccentHover: #cc8600,
+);
+
+@mixin export-colors-to-css-vars {
+  :root {
+    @each $name, $value in $colors {
+      --#{$name}: #{$value};
+    }
+  }
+}

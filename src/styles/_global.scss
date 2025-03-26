@@ -1,0 +1,36 @@
+@use "./colors.scss" as *;
+@use "normalize.css" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  background-color: var(--carbon0);
+}
+
+@include export-colors-to-css-vars();
+
+// global scrollbar
+::-webkit-scrollbar {
+  width: 9px;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--carbon300);
+  border-radius: 4px;
+  background-clip: content-box;
+  border: 2px solid transparent;
+}

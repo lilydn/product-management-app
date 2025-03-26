@@ -1,0 +1,27 @@
+@use "@/styles/_mixins.scss" as *;
+
+.button {
+  color: var(--carbon0);
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  background-color: var(--mainBlue);
+  // @TODO: define button size and inline-padding variants
+  padding: 10px 12px;
+  font-size: 16px;
+  width: 98px;
+  @include ellipsis;
+
+  &:hover:not(:disabled) {
+    // @TODO: define button variants - primary, secondary, etc - map colors by variant
+    background-color: var(--mainBlueHover);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
