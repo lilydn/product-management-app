@@ -23,10 +23,8 @@
 5. To format the code, run: `npm run pretty`
 
 
+--- --- ---
 
-
-
----
 
 ##### Features and implementation notes 📝:
 
@@ -55,3 +53,14 @@
 * Routing capabilities: make the currently selected product id as part of the route (there is basic routing added and /products route currently leads to the products page).
 * Add sort order option
 * Debouncing - when data is filtered on type - it can lead to performance issues in large datasets and heavier dom structure.
+* Deploy the app on a hosting service 
+
+
+
+--- --- ---
+
+Before running the app locally - here is a quick demonstration recording:
+
+https://github.com/user-attachments/assets/30492a3f-1561-46d5-8282-8e3e9c948ad6
+
+
