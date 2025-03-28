@@ -8,7 +8,7 @@
 
 1. Clone the repository:
 
-    `git clone https://github.com/your-username/product-management-app.git`
+    `git clone https://github.com/lilydn/product-management-app.git`
 
    `cd product-management-app`
 
