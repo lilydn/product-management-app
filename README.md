@@ -2,7 +2,7 @@
 
 ### This is a Product Management App built with React, TypeScript, and Vite. It allows users to view, add, update, and delete products.
 
----
+--- -----
 
 ##### To run the App locally:
 
